@@ -12,8 +12,9 @@ function App() {
   return (
     <Provider store={store}>
       <div className="main">
-        <List />        
-        {/* <AddTodo /> */}
+        <List />      
+        <hr />  
+        <AddTodo />
       </div>
     </Provider>
   );

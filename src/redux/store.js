@@ -4,12 +4,12 @@ import reducer from "./reducers/index";
 const initialState = {
   todos: [
     {
-      id: 1,
+      id: 0,
       name: "Go to the gym",
       complete: false,
     },
     {
-      id: 2,
+      id: 1,
       name: "Do laundry",
       complete: true,
     },
@@ -19,5 +19,5 @@ const initialState = {
 export const store = createStore(
   reducer,
   initialState,
-  window.devToolsExtension && window.devToolsExtension()
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );

@@ -10,10 +10,12 @@ function List() {
     <div>
       {todos.map((todo) => {
         return (
-          <React.Fragment>
-            <p key={todo.id}>{todo.name}</p>
-            <button onClick={() => dispatch(deleteTodoAction(todo.id))}>Delete</button>
-          </React.Fragment>
+          <div key={todo.id}>
+            <p>{todo.name} {todo.complete && '🚀 '}</p>
+            <button onClick={() => dispatch(deleteTodoAction(todo.id))}>
+              Delete
+            </button>
+          </div>
         );
       })}
     </div>
