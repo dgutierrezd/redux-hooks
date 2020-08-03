@@ -13,7 +13,7 @@ function App() {
     <Provider store={store}>
       <div className="main">
         <List />      
-        <hr />  
+        <br />  
         <AddTodo />
       </div>
     </Provider>
